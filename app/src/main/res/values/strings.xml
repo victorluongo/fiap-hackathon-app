@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Cutwatch</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_login">Login\nSeja Benvindo!</string>
+    <string name="logout">sair</string>
+    <string name="hello_knife_message">Olá  %1$s , %2$s ! :)</string>
+    <string name="Titulo_knife">Meu Cortante</string>
+    <string name="Titulo_Notificacao">Notificações</string>
+    <string name="Fotografar">Fotografar</string>
+    <string name="share_using">Select:</string>
+    <string name="share_knife_message">Hello, see the %1$s knife now. %2$s\n\nCheck out this and other objeto in the Knive 20MOB app. :)</string>
+    <string name="error_default">Erro! Alguma coisa deu errada, tente novamente!</string>
+    <string name="media_poster">Knife Image</string>
+    <string name="knife">knife</string>
+    <string name="media">Media</string>
+    <string name="splash_version">v1</string>
+    <string name="fail_create_user">Informe usuário e senha</string>
+</resources>

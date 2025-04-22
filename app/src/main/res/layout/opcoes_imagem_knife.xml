@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/opcoesImagemKnifeGaleria"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Galeria"
+        app:icon="@drawable/ic_action_imagem"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/opcoesImagemKnifeGaleriaVideo"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Vídeo"
+        app:icon="@drawable/ic_action_video"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/opcoesImagemKnifeGaleria"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/opcoesImagemKnifeFotografar"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/Fotografar"
+        app:icon="@drawable/ic_action_foto"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/opcoesImagemKnifeGaleriaVideo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/opcoesImagemKnifeRemover"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Remover"
+        android:textColor="?attr/colorError"
+        app:icon="@drawable/ic_action_remover"
+        app:layout_constraintTop_toBottomOf="@id/opcoesImagemKnifeFotografar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

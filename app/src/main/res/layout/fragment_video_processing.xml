@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Switch para alternar entre a visualização do vídeo e a galeria de frames -->
+    <Switch
+        android:id="@+id/switchViewMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exibir Galeria" />
+
+    <!-- Botão para selecionar o vídeo -->
+    <Button
+        android:id="@+id/btnSelectVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecionar Vídeo" />
+
+    <!-- TextView para exibir o status do processamento -->
+    <TextView
+        android:id="@+id/tvVideoStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status do Vídeo"
+        android:layout_marginTop="8dp" />
+
+    <!-- ProgressBar para indicar o progresso do processamento -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="0"
+        android:visibility="gone"
+        android:layout_marginTop="8dp"/>
+
+    <!-- RecyclerView para exibir os frames com detecção positiva -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvDetectedFrames"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="16dp" />
+</LinearLayout>

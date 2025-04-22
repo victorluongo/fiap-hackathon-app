@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.fiap.cutwatch.view.splash.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.fiap.cutwatch.view.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_formLoginFragment"
+            app:destination="@id/formLoginFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_listaKniveFragment"
+            app:destination="@id/listaKnive" />
+    </fragment>
+    <fragment
+        android:id="@+id/formLoginFragment"
+        android:name="com.fiap.cutwatch.view.form.FormLoginFragment"
+        android:label="fragment_form_login"
+        tools:layout="@layout/fragment_form_login" >
+        <action
+            android:id="@+id/action_formLoginFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listaKnive"
+        android:name="com.fiap.cutwatch.view.knife.ListaKniveFragment"
+        android:label="Knive"
+        tools:layout="@layout/fragment_knive_adapter">
+        <action
+            android:id="@+id/acao_listaKnive_para_formularioKnife"
+            app:destination="@id/formularioKnife" />
+    </fragment>
+    <fragment
+        android:id="@+id/formularioKnife"
+        android:name="com.fiap.cutwatch.view.knife.FormularioKnifeFragment"
+
+        android:label="Novo knife"
+        tools:layout="@layout/formulario_knife">
+        <argument
+            android:name="knifeId"
+            android:id="@+id/knifeId"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_formularioKnife_to_listaKnive"
+            app:destination="@id/listaKnive" />
+    </fragment>
+</navigation>
